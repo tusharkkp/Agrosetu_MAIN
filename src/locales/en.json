@@ -1,0 +1,196 @@
+{
+  "Home": "Home",
+  "Problem & Impact": "Problem & Impact",
+  "Soil Guidance": "Soil Guidance",
+  "Weather Alerts": "Weather Alerts",
+  "Pest Detection": "Pest Detection",
+  "Market Prices": "Market Prices",
+  "Voice Chatbot": "Voice Chatbot",
+  "Feedback": "Feedback",
+  "Smart Crop Advisory": "Smart Crop Advisory",
+  "for Small Farmers": "for Small Farmers",
+  "AI-powered, localized, and multilingual solutions for sustainable farming. ": "AI-powered, localized, and multilingual solutions for sustainable farming. ",
+  "Empowering farmers with smart technology for better crop yields.": "Empowering farmers with smart technology for better crop yields.",
+  "Get the App": "Get the App",
+  "Watch Demo": "Watch Demo",
+  "Farmers Helped": "Farmers Helped",
+  "Accuracy Rate": "Accuracy Rate",
+  "Crop Types": "Crop Types",
+  "AI Support": "AI Support",
+  "Comprehensive Farming Solutions": "Comprehensive Farming Solutions",
+  "Ready to Transform Your Farming?": "Ready to Transform Your Farming?",
+  "Download Now": "Download Now",
+  "Learn More": "Learn More",
+  "Scan QR for app experience": "Scan QR for app experience",
+  "pest": {
+    "title": "AI-Powered Pest & Disease Detection",
+    "subtitle": "Identify crop issues instantly with advanced AI analysis and get expert recommendations for treatment",
+    "methods": {
+      "title": "Detection Methods",
+      "photo": "Live Camera",
+      "photoDesc": "Capture images directly from your device camera for instant analysis",
+      "upload": "Upload Image",
+      "uploadDesc": "Upload existing photos of affected crop parts for detailed diagnosis",
+      "search": "Symptom Search",
+      "searchDesc": "Search our database for common pest and disease symptoms",
+      "accuracy": "Accuracy"
+    },
+    "detection": {
+      "title": "Upload Crop Image",
+      "subtitle": "Take a clear photo or upload an image of the affected crop part for AI analysis",
+      "uploadText": "Drag & drop your image here or click to browse",
+      "takePhoto": "Take Photo",
+      "uploadImage": "Upload Image"
+    },
+    "common": {
+      "title": "Common Pests & Diseases",
+      "aphids": "Aphids",
+      "aphidsDesc": "Small sap-sucking insects that cluster on new growth",
+      "aphidsSymptoms": "Curled leaves, Sticky residue, Ant activity, Stunted growth",
+      "aphidsTreatment": "Spray with neem oil or insecticidal soap. Remove heavily infested parts.",
+      "whiteflies": "Whiteflies",
+      "whitefliesDesc": "Small white flying insects that feed on plant sap",
+      "whitefliesSymptoms": "Yellowing leaves, White powdery coating, Leaf drop, Sooty mold",
+      "whitefliesTreatment": "Use yellow sticky traps and apply neem oil. Maintain good air circulation.",
+      "spiderMites": "Spider Mites",
+      "spiderMitesDesc": "Tiny arachnids that cause stippling and webbing on leaves",
+      "spiderMitesSymptoms": "Yellow stippling, Fine webbing, Leaf bronzing, Premature leaf drop",
+      "spiderMitesTreatment": "Increase humidity and spray with water. Apply miticide if severe.",
+      "thrips": "Thrips",
+      "thripsDesc": "Small slender insects that scrape plant tissue",
+      "thripsSymptoms": "Silver streaks, Deformed flowers, Black fecal spots, Stunted growth",
+      "thripsTreatment": "Remove weeds and debris. Apply spinosad or neem oil treatments.",
+      "leafRust": "Leaf Rust",
+      "leafRustDesc": "Fungal disease causing orange-brown pustules on leaves"
+    },
+    "symptoms": "Symptoms",
+    "treatment": "Treatment",
+    "recent": {
+      "title": "Recent Detections",
+      "detected": "Detected",
+      "treatmentRecommended": "Treatment Recommended",
+      "monitorClosely": "Monitor Closely",
+      "treatmentApplied": "Treatment Applied"
+    },
+    "form": {
+      "cropType": "Crop Type",
+      "cropTypePlaceholder": "Enter crop name (e.g., Tomato, Rice, Wheat)",
+      "location": "Location",
+      "locationPlaceholder": "Enter your city or region",
+      "language": "Preferred Language",
+      "languagePlaceholder": "Select language for analysis",
+      "analyzeButton": "Analyze Image",
+      "analyzing": "Analyzing...",
+      "retakeButton": "Retake Photo",
+      "uploadAnotherButton": "Upload Another"
+    },
+    "results": {
+      "title": "Analysis Results",
+      "severity": "Severity Level",
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "severe": "Severe",
+      "urgent": "URGENT ALERT!",
+      "analysis": "Detailed Analysis",
+      "weather": "Current Weather",
+      "recommendations": "Recommendations",
+      "prevention": "Prevention Tips",
+      "nextSteps": "Next Steps"
+    },
+    "feedback": {
+      "title": "Was this analysis helpful?",
+      "helpful": "Very Helpful",
+      "somewhat": "Somewhat Helpful",
+      "notHelpful": "Not Helpful",
+      "comment": "Additional Comments (Optional)",
+      "commentPlaceholder": "Share your feedback to help us improve...",
+      "submit": "Submit Feedback",
+      "submitted": "Thank you for your feedback!"
+    },
+    "errors": {
+      "noImage": "Please upload an image first",
+      "analysisFailed": "Analysis failed. Please try again.",
+      "networkError": "Network error. Please check your connection.",
+      "invalidImage": "Invalid image format. Please upload a valid image file."
+    }
+  },
+  "market": {
+    "title": "Real-Time Market Prices",
+    "subtitle": "Stay updated with live commodity prices, market trends, and find the best markets to sell your produce",
+    "prices": {
+      "title": "Live Market Prices",
+      "perQuintal": "per quintal",
+      "updated": "Last updated",
+      "wheat": "Wheat",
+      "rice": "Rice",
+      "tomato": "Tomato",
+      "onion": "Onion",
+      "potato": "Potato",
+      "cotton": "Cotton",
+      "delhiMandi": "Delhi Mandi",
+      "mumbaiMarket": "Mumbai Market",
+      "bangaloreAPMC": "Bangalore APMC",
+      "puneMarket": "Pune Market",
+      "kolkataMandi": "Kolkata Mandi",
+      "ahmedabadMarket": "Ahmedabad Market"
+    },
+    "chart": {
+      "title": "Price Trends",
+      "placeholder": "Price chart will be displayed here",
+      "integration": "Real-time data integration coming soon"
+    },
+    "insights": {
+      "title": "Market Insights",
+      "seasonal": "Seasonal Trends",
+      "seasonalDesc": "Understanding seasonal price patterns helps in planning harvest and sales timing",
+      "export": "Export Opportunities",
+      "exportDesc": "Global demand and export policies significantly impact domestic commodity prices",
+      "weather": "Weather Impact",
+      "weatherDesc": "Weather conditions directly affect crop yields and subsequently market prices",
+      "policy": "Government Policy",
+      "policyDesc": "Agricultural policies, MSP, and trade regulations influence market dynamics",
+      "impact": {
+        "high": "High Impact",
+        "medium": "Medium Impact",
+        "low": "Low Impact"
+      }
+    },
+    "nearby": {
+      "title": "Nearby Markets",
+      "centralMandi": "Central Mandi",
+      "wholesaleMarket": "Wholesale Market",
+      "farmerMarket": "Farmer Market",
+      "open": "Open",
+      "closed": "Closed",
+      "away": "away"
+    },
+    "alerts": {
+      "title": "Price Alerts",
+      "subtitle": "Get notified when your commodity reaches your target price",
+      "commodity": "Commodity",
+      "targetPrice": "Target Price (₹)",
+      "setAlert": "Set Alert"
+    },
+    "search": {
+      "title": "Search Market Prices",
+      "subtitle": "Filter by commodity, location, or market to find the best prices",
+      "commodity": "Commodity",
+      "state": "State",
+      "district": "District",
+      "market": "Market",
+      "location": "Location",
+      "searchButton": "Search Prices",
+      "clearButton": "Clear Filters",
+      "noData": "No Market Data Found",
+      "noDataDesc": "Try adjusting your search filters or search for a different commodity.",
+      "searchAgain": "Search Again"
+    },
+    "trends": {
+      "title": "Price Trends",
+      "subtitle": "Price trends over the last 7 days",
+      "noData": "No trend data available",
+      "selectCommodity": "Select a commodity to view price trends"
+    }
+  }
+}
+

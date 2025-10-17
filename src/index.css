@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smart Crop Advisory Design System
+All colors, gradients, fonts, and animations defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --pear: 74 57% 54%;          /* #CBD83B - Primary brand green */
+    --pear-light: 74 57% 70%;    /* Lighter pear for hover states */
+    --pear-dark: 74 57% 40%;     /* Darker pear for active states */
+    
+    --indigo: 268 68% 73%;       /* #A88AED - Secondary brand purple */
+    --indigo-light: 268 68% 85%; /* Lighter indigo */
+    --indigo-dark: 268 68% 60%;  /* Darker indigo */
+    
+    --ivory: 57 100% 97%;        /* #FFFEEC - Background ivory */
+    --ivory-light: 57 100% 99%;  /* Almost white */
+    --ivory-dark: 57 80% 92%;    /* Slightly darker ivory */
+
+    /* Text Colors */
+    --text-dark: 0 0% 13%;       /* #212121 - Dark text */
+    --text-medium: 0 0% 29%;     /* #4A4A4A - Medium text */
+    --text-light: 0 0% 60%;      /* Light text for subtle content */
+
+    /* System Colors */
+    --background: var(--ivory);
+    --foreground: var(--text-dark);
+
+    --card: var(--ivory-light);
+    --card-foreground: var(--text-dark);
+
+    --popover: var(--ivory-light);
+    --popover-foreground: var(--text-dark);
+
+    --primary: var(--pear);
+    --primary-foreground: var(--text-dark);
+
+    --secondary: var(--indigo);
+    --secondary-foreground: var(--ivory-light);
+
+    --muted: var(--ivory-dark);
+    --muted-foreground: var(--text-medium);
+
+    --accent: var(--pear-light);
+    --accent-foreground: var(--text-dark);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--ivory-light);
+
+    --border: var(--ivory-dark);
+    --input: var(--ivory-light);
+    --ring: var(--pear);
+
+    /* Glassmorphic Effects */
+    --glass-bg: hsl(var(--ivory) / 0.8);
+    --glass-border: hsl(var(--pear) / 0.2);
+    --glass-shadow: 0 8px 32px hsl(var(--pear) / 0.1);
+    --glass-glow: 0 0 20px hsl(var(--pear) / 0.3);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--pear)) 0%, hsl(var(--pear-light)) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--indigo)) 0%, hsl(var(--indigo-light)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--pear) / 0.9) 0%, hsl(var(--indigo) / 0.8) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(var(--ivory-light)) 0%, hsl(var(--ivory)) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(var(--pear) / 0.1);
+    --shadow-md: 0 4px 16px hsl(var(--pear) / 0.15);
+    --shadow-lg: 0 8px 32px hsl(var(--pear) / 0.2);
+    --shadow-glow: 0 0 24px hsl(var(--pear) / 0.4);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+}
+
+@layer components {
+  /* Glassmorphic Components */
+  .glass-card {
+    @apply backdrop-blur-md border border-white/20 rounded-xl;
+    background: var(--glass-bg);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-lg border-b border-white/10;
+    background: var(--glass-bg);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-nav:hover {
+    box-shadow: var(--glass-glow);
+  }
+
+  /* Button Variants */
+  .btn-hero {
+    @apply px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300;
+    background: var(--gradient-primary);
+    color: hsl(var(--text-dark));
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    background: var(--gradient-secondary);
+    color: hsl(var(--ivory-light));
+    box-shadow: var(--shadow-sm);
+  }
+
+  .btn-secondary:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Feature Cards */
+  .feature-card {
+    @apply p-6 rounded-2xl transition-all duration-300 hover:scale-105 border-2;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-md);
+    border: 2px solid hsl(var(--pear) / 0.3);
+  }
+
+  .feature-card:hover {
+    box-shadow: var(--shadow-glow);
+    border: 2px solid hsl(var(--pear) / 0.6);
+  }
+
+  /* Text Gradients */
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-secondary {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Parallax Layer Styles */
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+/* Parallax Animation Keyframes */
+@keyframes parallax_fg {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+
+@keyframes parallax_bike {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
